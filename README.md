@@ -1,16 +1,64 @@
-# React + Vite
+🚀 Startup-CEO-Sim: The Conglomerate Simulator
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Startup-CEO-Sim is a high-fidelity, data-driven business simulation built to explore the complexities of scaling a multi-product tech company. Unlike simple idle games, this project focuses on Product-Led Growth, Unit Economics, and Cross-Industry Innovation.
 
-Currently, two official plugins are available:
+🎮 Key Features
+🛠️ Multi-Product "Forge" Engine
+Forge unique product lines by researching specific industry branches. Each product exists as an independent entity with its own:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Auto-Development Loop: Progress bars move based on assigned Engineer headcount.
+- Version Control: Products automatically iterate (v1.0 → v1.1) upon completion, triggering user growth spikes.
+- Local Team Management: Hire, fire, or move staff between products to optimize for the fastest-growing segments.
 
-## React Compiler
+🔬 Multi-Track Industry Tech Tree
+Explore five distinct industry verticals, each with 5 tiers of research:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- FinTech: Focus on ARPU (Average Revenue Per User) and transaction scaling.
+- HealthTech: Focus on User Retention and lowering churn.
+- AI & Robotics: Focus on Development Velocity and automation.
+- EduTech: Focus on Talent Efficiency and Research Point (RP) generation.
+- GreenTech: Focus on ESG scores and radical Burn Rate reduction.
 
-## Expanding the ESLint configuration
+📊 Real-Time Financial Analytics
+- Live Valuation Chart: Built with Recharts, tracking your company's net worth based on cash-on-hand and user equity.
+- Probabilistic Marketing: Launch campaigns with a 60% success factor—simulating the volatility of CAC (Customer Acquisition Cost).
+- Bankruptcy Logic: A hard "Game Over" state triggered if the Treasury hits $0.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+💻 Technical Stack
+- Framework: React + Vite (Lightning-fast HMR and build times).
+- State Management: Zustand with Persistence (Game state survives browser refreshes).
+- UI/UX: Mantine UI with a custom Glassmorphism theme for a "Command Center" feel.
+- Icons: Lucide React.
+- Audio: Custom Web Audio API synthesizer (No external assets required).
+
+🏗️ Project Architecture
+src/
+├── components/       # Reusable UI (EmployeeCard, ValuationChart)
+├── data/             # Business Logic (Tech Tree, Industry Verticals)
+├── engine/           # SFX Synthesizer & Physics
+├── hooks/            # useGameState.js (The Central "Brain")
+└── App.jsx           # The "Conglomerate" Dashboard
+
+📈 Optimization & Unit Economics
+The game's engine is balanced using a daily-burn-divided-by-30 model.
+
+Revenue Calculation: (Total Users * ARPU) - ((Salaries + Rent) / 30)
+
+ARPU: Base $0.25, scaling with product complexity.
+
+🛠️ Local Development
+Clone the Repo:
+
+```bash
+git clone https://github.com/Amurut/startup-ceo-sim-game.git
+```
+Install Dependencies:
+
+```bash
+npm install
+```
+Start the Engine:
+
+```bash
+npm run dev
+```

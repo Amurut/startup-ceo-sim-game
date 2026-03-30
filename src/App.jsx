@@ -48,7 +48,7 @@ function App() {
       <AppShell.Header p="md" className="glass-panel">
         <Container size="lg">
           <Group justify="space-between">
-            <Title order={3} c="green.4">CONGLOMERATE OS</Title>
+            <Title order={3} c="green.4">Startup CEO Sim</Title>
             <Group>
                <Badge color={totalStaff >= game.officeCapacity ? "red" : "blue"}>STAFF: {totalStaff}/{game.officeCapacity}</Badge>
                <Button variant="subtle" color="red.8" size="xs" onClick={game.dissolve}><Trash2 size={14}/></Button>
