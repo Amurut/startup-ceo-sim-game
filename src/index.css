@@ -1,0 +1,25 @@
+:root {
+  background-color: #0a0a0b;
+}
+
+body {
+  margin: 0;
+  background: radial-gradient(circle at top right, #1a2e1a 0%, #0a0a0b 40%),
+              radial-gradient(circle at bottom left, #121214 0%, #0a0a0b 50%);
+  background-attachment: fixed;
+  min-height: 100vh;
+  color: #e4e4e7;
+}
+
+/* Glass effect for panels */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.03) !important;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 12px !important;
+}
+
+/* Custom scrollbar for that "Terminal" look */
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: #0a0a0b; }
+::-webkit-scrollbar-thumb { background: #2f2f33; border-radius: 10px; }
